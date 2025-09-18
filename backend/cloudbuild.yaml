@@ -1,0 +1,12 @@
+steps:
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      - run
+      - deploy
+      - le-api
+      - --source=backend
+      - --region=asia-south1
+      - --allow-unauthenticated
+      - --quiet
+
+
